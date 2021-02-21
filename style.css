@@ -44,7 +44,7 @@ fieldset{
 input::placeholder{
     padding-left: 0.2rem;
 }
-#basic-info>input#age{
+#basic-info>input#number{
     width: 80px;
 }
 #tech-savvy>select{
