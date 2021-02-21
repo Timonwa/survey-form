@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+        <h1 id="title">Social Media Form</h1>
+        
+        <form action="" id="survey-form">
+            <fieldset>
+                 <p id="description">We would like to know what social media platforms you like to use.</p>
+                <div id="basic-info">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" placeholder="name" required>
+                    <label for="email" id="email-label">Email</label>
+                    <input type="text" id="email" placeholder="email" required>
+                    <label for="number" id="number-label">Number</label>
+                    <input type="text" id="number" placeholder="number" required>
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" id="age" placeholder="age" min="10" max="99" required>
+                </div>
+
+                <div id="gender">
+                    <p>What is your gender</p>
+                    <input type="radio" value="female" name="gender" checked>
+                    <label for="gender">male</label>
+                    <input type="radio" value="male" name="gender">
+                    <label for="gender">female</label>
+                    <input type="radio" value="other" name="gender">
+                    <label for="gender">other</label>
+                </div>
+
+                <div id="socials">
+                    <p>What social media platforms do you use, please select one or more of the following;</p>
+                    <input type="checkbox">
+                    <label for="" >Facebook</label>
+                    <input type="checkbox">
+                    <label for="" >Twitter</label>
+                    <input type="checkbox">
+                    <label for="" >Instagram</label>
+                    <input type="checkbox">
+                    <label for="" >Snapchat</label>
+                    <input type="checkbox">
+                    <label for="" >TikTok</label>
+                    <input type="checkbox">
+                    <label for="" >LinkedIn</label>
+                    <input type="checkbox">
+                    <label for="" >Whatsapp</label>
+                    <input type="checkbox">
+                    <label for="" >Telegram</label>
+                </div>
+                <div>
+                    <label for="">Additional comments</label>
+                    <input type="text-area">
+                </div>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
