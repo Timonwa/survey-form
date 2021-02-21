@@ -1,0 +1,84 @@
+body{
+    background-image: linear-gradient(rgb(100, 100, 143), rgb(56, 15, 56), rgb(73, 27, 34));
+    color: white;
+    margin: 10%;
+    font-size: 20px;
+}
+#title{
+    box-shadow: 0px 2px 2px  rgb(56, 15, 56);
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem 0.5rem 0 0;
+    -webkit-border-radius: 0.5rem 0.5rem 0 0;
+    -moz-border-radius: 0.5rem 0.5rem 0 0;
+    -ms-border-radius: 0.5rem 0.5rem 0 0;
+    -o-border-radius: 0.5rem 0.5rem 0 0;
+}
+fieldset{
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 10% 10%;
+    margin: auto;
+    border: navy;
+    border: solid  rgba(0, 0, 0, 0.171) 1px;
+    border-top:none ;
+    border-radius: 0 0 0.3rem 0.3rem;
+    -webkit-border-radius: 0 0 0.3rem 0.3rem;
+    -moz-border-radius: 0 0 0.3rem 0.3rem;
+    -ms-border-radius: 0 0 0.3rem 0.3rem;
+    -o-border-radius: 0 0 0.3rem 0.3rem;
+}
+#description{
+    font-weight: bold;
+    margin-top: 0;
+}
+#basic-info>label,#add-info>label{
+    display: block;
+}
+#basic-info>input{
+    margin-bottom: 0.3rem;
+    width: 50%;
+    height: 1rem;
+}
+input::placeholder{
+    padding-left: 0.2rem;
+}
+#basic-info>input#age{
+    width: 80px;
+}
+#tech-savvy>select{
+    padding-left: 0.2rem;
+    height: 1.3rem;
+    width: 80px;
+}
+#gender>p,#socials>p,#add-info>p,#tech-savvy>p{
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+}
+[type=radio]{
+    margin: 0 0 0 0.3rem;
+}[type=checkbox]{
+    margin: 0 0 0 0.5rem;
+}
+input:focus{
+    background-color: rgba(70, 180, 85, 0.336);
+    color: white;
+}
+button{
+    width: 239px;
+    background-color: rgba(56, 15, 56, 0.5);
+    color: white;
+    font: 1.1rem bold;
+    border: solid rgb(56, 15, 56) 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+}
+button:hover{
+    color: black;
+}
