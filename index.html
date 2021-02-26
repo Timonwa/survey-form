@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Survey Form</title>
-</head>
-<body>
-    <div>
+  </head>
+  <body>
+    <div id="form">
+      <form action="" id="survey-form">
         <h1 id="title">Social Media Form</h1>
-        
-        <form action="" id="survey-form">
-            <fieldset>
-                 <p id="description">We would like to know what social media platforms you like to use.</p>
-                <div id="basic-info">
-                    <label for="name" id="name-label">Name</label>
-                    <input type="text" id="name" placeholder="name" required>
-                    <label for="email" id="email-label">Email</label>
-                    <input type="email" id="email" placeholder="email" required>
-                    <label for="number" id="number-label">Age</label>
-                    <input type="number" id="number" placeholder="age" min="10" max="99" required>
-                </div>
+        <fieldset>
+          <h3 id="description">
+            We would like to know what social media platforms you like to use.
+          </h3>
+          <div id="basic-info">
+            <div>
+              <label for="name" id="name-label">Name:</label>
+              <input type="text" id="name" placeholder="name" required />
+            </div>
+            <div>
+              <label for="email" id="email-label">Email:</label>
+              <input type="email" id="email" placeholder="email" required />
+            </div>
+            <div class="age">
+              <label for="number" id="number-label">Age:</label>
+              <input
+                type="number"
+                id="number"
+                placeholder="age"
+                min="10"
+                max="99"
+                required
+              />
+            </div>
+          </div>
 
-                <div id="gender">
-                    <p>What is your gender</p>
-                    <input type="radio" value="female" name="gender" checked>
-                    <label for="gender">male</label>
-                    <input type="radio" value="male" name="gender">
-                    <label for="gender">female</label>
-                    <input type="radio" value="other" name="gender">
-                    <label for="gender">other</label>
-                </div>
+          <div id="gender">
+            <p>What is your gender?</p>
+            <input type="radio" value="female" name="gender" checked />
+            <label for="gender">male</label>
+            <input type="radio" value="male" name="gender" />
+            <label for="gender">female</label>
+            <input type="radio" value="other" name="gender" />
+            <label for="gender">other</label>
+          </div>
 
-                <div id="tech-savvy">
-                    <p>Are you tech savvy?</p>
-                    <select name="tech-savvy" id="dropdown">
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                        <option value="little">A little</option>
-                    </select>
-                </div>
+          <div id="tech-savvy">
+            <p>Are you tech savvy?</p>
+            <select name="tech-savvy" id="dropdown">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="little">A little</option>
+            </select>
+          </div>
 
-                <div id="socials">
-                    <p>What social media platforms do you use, please select one or more of the following;</p>
-                    <input type="checkbox" value="socials">
-                    <label for="" >Facebook</label>
-                    <input type="checkbox" value="socials">
-                    <label for="" >Twitter</label>
-                    <input type="checkbox" value="socials">
-                    <label for="" >Instagram</label>
-                    <input type="checkbox" value="socials">
-                    <label for="" >Snapchat</label>
-                    <input type="checkbox" value="socials">
-                    <label for="" >TikTok</label>
-                    <input type="checkbox" value="socials">
-                    <label for="" >LinkedIn</label>
-                    <input type="checkbox" value="socials">
-                    <label for="" >Whatsapp</label>
-                    <input type="checkbox" value="socials">
-                    <label for="" >Telegram</label>
-                </div>
-                <div id="add-info">
-                    <p for="">Additional comments</p>
-                    <textarea name="comments" id="commments" cols="35" rows="10"></textarea>
-                </div>
-                <button id="submit">Submit</button>
-            </fieldset>
-        </form>
+          <div id="socials">
+            <p>
+              What social media platforms do you use, please select one or more
+              of the following:
+            </p>
+            <div class="socials">
+              <input type="checkbox" value="socials" />
+              <label for="">Facebook</label>
+              <input type="checkbox" value="socials" />
+              <label for="">Twitter</label>
+              <input type="checkbox" value="socials" />
+              <label for="">Instagram</label>
+              <input type="checkbox" value="socials" />
+              <label for="">Snapchat</label>
+              <input type="checkbox" value="socials" />
+              <label for="">TikTok</label>
+              <input type="checkbox" value="socials" />
+              <label for="">LinkedIn</label>
+              <input type="checkbox" value="socials" />
+              <label for="">Whatsapp</label>
+              <input type="checkbox" value="socials" />
+              <label for="">Telegram</label>
+            </div>
+          </div>
+          <div id="add-info">
+            <p for="">Additional comments</p>
+            <textarea
+              name="comments"
+              id="commments"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <button id="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
     </div>
-</body>
+  </body>
 </html>
